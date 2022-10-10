@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link href="assets/css/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+	<title>Официальный сайт Федеральных арбитражных судов РФ</title>
+  
+</head>
+<body>
+
+	<svg style="display: none;">
+		<symbol id="close-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M18 6L12 12M12 12L6 18M12 12L6 6M12 12L18 18"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+		</symbol>
+		<symbol id="dots-icon" viewBox="0 0 24 24">
+			<g>
+				<path d="M6.80527 8.39961C6.44527 8.39961 6.06527 8.23959 5.80527 7.97959C5.54527 7.71959 5.40527 7.35961 5.40527 6.99961C5.40527 6.63961 5.56527 6.27961 5.80527 5.99961C6.06527 5.73961 6.42527 5.59961 6.80527 5.59961C7.16527 5.59961 7.52527 5.75961 7.78527 5.99961C8.04527 6.25961 8.20527 6.61961 8.20527 6.99961C8.20527 7.35961 8.04527 7.71959 7.78527 7.97959C7.54527 8.25959 7.16527 8.39961 6.80527 8.39961ZM13.0053 7.97959C13.2653 7.71959 13.4253 7.35961 13.4253 6.99961C13.4253 6.63961 13.2653 6.27961 13.0053 5.99961C12.7453 5.73961 12.3853 5.59961 12.0253 5.59961C11.6653 5.59961 11.2853 5.75961 11.0253 5.99961C10.7653 6.25961 10.6253 6.61961 10.6253 6.99961C10.6253 7.35961 10.7853 7.71959 11.0253 7.97959C11.2853 8.23959 11.6453 8.39961 12.0253 8.39961C12.3653 8.39961 12.7453 8.25959 13.0053 7.97959ZM18.2053 7.97959C18.4653 7.71959 18.6253 7.35961 18.6253 6.99961C18.6253 6.63961 18.4653 6.27961 18.2053 5.99961C17.9453 5.73961 17.5853 5.59961 17.2253 5.59961C16.8653 5.59961 16.4853 5.75961 16.2253 5.99961C15.9653 6.25961 15.8253 6.61961 15.8253 6.99961C15.8253 7.35961 15.9853 7.71959 16.2253 7.97959C16.4853 8.23959 16.8453 8.39961 17.2253 8.39961C17.5653 8.39961 17.9453 8.25959 18.2053 7.97959ZM7.80527 12.9796C8.06527 12.7196 8.22527 12.3596 8.22527 11.9996C8.22527 11.6396 8.06527 11.2796 7.80527 10.9996C7.54527 10.7396 7.18527 10.5996 6.82527 10.5996C6.46527 10.5996 6.08527 10.7596 5.82527 10.9996C5.56527 11.2596 5.42527 11.6196 5.42527 11.9996C5.42527 12.3596 5.58527 12.7196 5.82527 12.9796C6.08527 13.2396 6.44527 13.3996 6.82527 13.3996C7.16527 13.3996 7.54527 13.2596 7.80527 12.9796ZM13.0053 12.9796C13.2653 12.7196 13.4253 12.3596 13.4253 11.9996C13.4253 11.6396 13.2653 11.2796 13.0053 10.9996C12.7453 10.7396 12.3853 10.5996 12.0253 10.5996C11.6653 10.5996 11.2853 10.7596 11.0253 10.9996C10.7653 11.2596 10.6253 11.6196 10.6253 11.9996C10.6253 12.3596 10.7853 12.7196 11.0253 12.9796C11.2853 13.2396 11.6453 13.3996 12.0253 13.3996C12.3653 13.3996 12.7453 13.2596 13.0053 12.9796ZM18.2053 12.9796C18.4653 12.7196 18.6253 12.3596 18.6253 11.9996C18.6253 11.6396 18.4653 11.2796 18.2053 10.9996C17.9453 10.7396 17.5853 10.5996 17.2253 10.5996C16.8653 10.5996 16.4853 10.7596 16.2253 10.9996C15.9653 11.2596 15.8253 11.6196 15.8253 11.9996C15.8253 12.3596 15.9853 12.7196 16.2253 12.9796C16.4853 13.2396 16.8453 13.3996 17.2253 13.3996C17.5653 13.3996 17.9453 13.2596 18.2053 12.9796ZM7.80527 17.9796C8.06527 17.7196 8.22527 17.3596 8.22527 16.9996C8.22527 16.6396 8.06527 16.2796 7.80527 15.9996C7.54527 15.7396 7.18527 15.5996 6.82527 15.5996C6.46527 15.5996 6.08527 15.7596 5.82527 15.9996C5.56527 16.2596 5.42527 16.6196 5.42527 16.9996C5.42527 17.3596 5.58527 17.7196 5.82527 17.9796C6.08527 18.2396 6.44527 18.3996 6.82527 18.3996C7.16527 18.3996 7.54527 18.2596 7.80527 17.9796ZM13.0053 17.9796C13.2653 17.7196 13.4253 17.3596 13.4253 16.9996C13.4253 16.6396 13.2653 16.2796 13.0053 15.9996C12.7453 15.7396 12.3853 15.5996 12.0253 15.5996C11.6653 15.5996 11.2853 15.7596 11.0253 15.9996C10.7653 16.2596 10.6253 16.6196 10.6253 16.9996C10.6253 17.3596 10.7853 17.7196 11.0253 17.9796C11.2853 18.2396 11.6453 18.3996 12.0253 18.3996C12.3653 18.3996 12.7453 18.2596 13.0053 17.9796ZM18.2053 17.9796C18.4653 17.7196 18.6253 17.3596 18.6253 16.9996C18.6253 16.6396 18.4653 16.2796 18.2053 15.9996C17.9453 15.7396 17.5853 15.5996 17.2253 15.5996C16.8653 15.5996 16.4853 15.7596 16.2253 15.9996C15.9653 16.2596 15.8253 16.6196 15.8253 16.9996C15.8253 17.3596 15.9853 17.7196 16.2253 17.9796C16.4853 18.2396 16.8453 18.3996 17.2253 18.3996C17.5653 18.3996 17.9453 18.2596 18.2053 17.9796Z"/>
+			</g>
+		</symbol>
+		<symbol id="search-icon" viewBox="0 0 18 18">
+			<g>
+				<path d="M15.75 15.75L12.4941 12.4912C11.4067 13.589 9.91729 14.25 8.25 14.25C4.93629 14.25 2.25 11.5637 2.25 8.25C2.25 4.93629 4.93629 2.25 8.25 2.25C11.5637 2.25 14.25 4.93629 14.25 8.25C14.25 9.05475 14.0916 9.8225 13.8042 10.5238"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+		</symbol>
+		<symbol id="glass-icon" viewBox="0 0 40 40">
+			<g>
+				<circle cx="11" cy="20" r="6" stroke-width="2"/>
+				<path d="M17.397 19.5C18.2016 19.1775 19.0801 19 20.0001 19C21.0737 19 22.0908 19.2417 23.0001 19.6736" stroke="#34415A" stroke-width="1.5"/>
+				<circle cx="29" cy="20" r="6" stroke-width="2"/>
+				<rect x="3" y="19" width="2" height="2"/>
+				<rect x="35" y="19" width="2" height="2"/>
+			</g>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="header__description">Официальный сайт Федеральных арбитражных судов РФ</div>
+					<div class="header__menu">
+						<div class="header__buttons">
+							<div class="lang">
+								<div class="lang__select">Ru</div>
+								<div class="lang__dropdown">
+									<ul>
+										<li>
+											<a href="#" class="lang__option">
+												<span>Ru </span>
+												<span>- Русский</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang__option">
+												<span>BLR </span>
+												<span>- Белорусский язык</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang__option">
+												<span>UKR </span>
+												<span>- Украинский язык</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div><!--/lang-->
+							<a href="#" class="btn-view">
+								<svg>
+									<use xlink:href="#glass-icon"></use>
+								</svg>
+							</a>
+						</div>
+						<a href="#" class="btn open-popup" data-popup="popup-fas">
+							<svg>
+								<use xlink:href="#dots-icon"></use>
+							</svg>
+							<span>Сайты АС по округам</span>
+						</a>
+					</div> 
+				</div>
+				<div class="header__inner">
+					<a href="/" class="logo">
+						<img src="assets/images/gerb.png" alt="">
+						<span>Федеральные арбитражные суды</span>
+					</a>
+					<a href="#" class="search open-popup" data-popup="popup-search">
+						<span class="search__icon">
+							<svg>
+								<use xlink:href="#search-icon"></use>
+							</svg>
+						</span>
+						<span class="search__description">Поиск</span>
+					</a>
+					<div class="burger">
+						<div class="burger__item"></div>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<a href="#" class="header__link">Общая информация</a>
+					<a href="#" class="header__link">Правовые основы</a>
+					<a href="#" class="header__link">Противодействие коррупции</a>
+					<a href="#" class="header__link">Кадровое обеспечение</a>
+					<a href="#" class="header__link">Деятельность</a>
+					<a href="#" class="header__link">Статистика</a>
+					<a href="#" class="header__link">Архив</a>
+				</nav>
+			</div>
+		</header><!--/header-->
+		<main class="main bg-lblue">
+			<div class="menu">
+				<div class="links">
+					<div class="container">
+						<div class="links__inner">
+							<a href="#" class="links__item">
+								<div class="links__icon">
+									<img src="assets/images/file-icon.svg" alt="">
+								</div>
+								<div class="links__info">
+									<span>Подача документов </span>
+									<span>в электронном виде</span>
+								</div>
+							</a><!--/links__item-->
+							<a href="#" class="links__item">
+								<div class="links__icon">
+									<img src="assets/images/archive-icon.svg" alt="">
+								</div>
+								<div class="links__info">
+									<span>Картотека </span>
+									<span>арбитражных дел</span>
+								</div>
+							</a><!--/links__item-->
+							<a href="#" class="links__item">
+								<div class="links__icon">
+									<img src="assets/images/calendar-icon.svg" alt="">
+								</div>
+								<div class="links__info">
+									<span>Календарь  </span>
+									<span>судебных заседаний арбитражных судов</span>
+								</div>
+							</a><!--/links__item-->
+							<a href="#" class="links__item">
+								<div class="links__icon">
+									<img src="assets/images/suitcase-icon.svg" alt="">
+								</div>
+								<div class="links__info">
+									<span>Банк решений </span>
+									<span>арбитражных судов</span>
+								</div>
+							</a><!--/links__item-->
+							<a href="#" class="links__item">
+								<div class="links__icon">
+									<img src="assets/images/help-question.svg" alt="">
+								</div>
+								<div class="links__info">
+									<span>Подача жалобы </span>
+									<span>на действия судей и работников аппарата судов</span>
+								</div>
+							</a><!--/links__item-->
+						</div>
+					</div>
+				</div><!--/links-->
+				<div class="links-box">
+					<div class="container">
+						<div class="links-box__inner">
+							<a href="#" class="links-box__item">Судебная коллегия по экономическим спорам Верховного Суда РФ</a>
+							<a href="#" class="links-box__item">Постановления Пленума Верховного Суда Российской Федерации</a>
+							<a href="#" class="links-box__item">Обзоры судебной практики Верховного Суда Российской Федерации</a>
+							<a href="#" class="links-box__item">Обзоры судебной практики Верховного Суда Российской Федерации</a>
+						</div>
+					</div>
+				</div><!--/links-box-->
+			</div><!--/menu-->
+			<section class="fas-nav">
+				<div class="container">
+					<div class="fas-nav__box">
+						<h2 class="fas-nav__title">Федеральные арбитражные суды</h2>
+						<div class="fas-nav__text">Выберите субъект РФ для перехода на арбитражный суд субъекта или воспользуйтесь списком</div>
+						<div class="fas-nav__inner">
+							<div class="fas-nav__links">
+								<ul>
+									<li>
+										<a href="#" class="fas-nav__link">
+											<div class="fas-nav__icon">
+												<img src="assets/images/libra.svg" alt="">
+											</div>
+											<span>Арбитражные суды округов </span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="fas-nav__link">
+											<div class="fas-nav__icon">
+												<img src="assets/images/libra.svg" alt="">
+											</div>
+											<span>Арбитражные апелляционные суды  </span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="fas-nav__link">
+											<div class="fas-nav__icon">
+												<img src="assets/images/libra.svg" alt="">
+											</div>
+											<span>Арбитражные суды субъектов федерации </span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="fas-nav__link">
+											<div class="fas-nav__icon">
+												<img src="assets/images/libra.svg" alt="">
+											</div>
+											<span>Суд по интеллектуальным правам </span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="fas-nav__map">
+   								 <div id="vmap" style="width: 100%;"></div>
+   								 <div class="fas-nav-geo">
+   								 	<div class="fas-nav-geo__inner">
+   								 		<div class="fas-nav__icon">
+											<img src="assets/images/libra-wh.svg" alt="">
+										</div>
+										<div class="fas-nav-geo__info">
+											<a href="#">Арбитражный суд Восточно-Сибирского округа </a>
+											<span>г. Красноярск, ул. Ленина, д. 1Б</span>
+										</div>
+									</div>
+   								 </div>
+							</div>	
+						</div>
+					</div><!--/fas-nav__box-->
+					<div class="fas-nav__description">В рамках судебной реформы в соответствии с Федеральными конституционными законами "О судебной системе Российской Федерации" и "Об арбитражных судах в Российской Федерации" в стране создана единая судебная система. В ее состав входят и арбитражные суды, имеющие статус федеральных.</div>
+				</div>
+			</section><!--/fas-nav-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-menu">
+					<div class="footer-menu__col">
+						<h3 class="footer-menu__title">Федеральные арбитражные суды</h3>
+						<ul class="footer-menu__list footer-menu__drop">
+							<li>
+								<a href="#" class="footer__link">Общая информация</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Правовые основы</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Противодействие коррупции</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Кадровое обеспечение</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Деятельность</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Статистика</a>
+							</li>
+							<li>
+								<a href="#" class="footer__link">Архив</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-menu__col">
+						<h3 class="footer-menu__title">Важные ссылки</h3>
+						<div class="footer-menu__inner footer-menu__drop">
+							<ul class="footer-menu__list">
+								<li>
+									<a href="#" class="footer__link">Конституционный Суд Российской Федерации	</a>
+								</li>
+								<li>
+									<a href="#" class="footer__link">Верховный Суд Российской Федерации</a>
+								</li>
+								<li>
+									<a href="#" class="footer__link">Совет судей Российской Федерации</a>
+								</li>
+								<li>
+									<a href="#" class="footer__link">Высшая квалификационная коллегия судей Российской Федерации</a>
+								</li>
+								<li>
+									<a href="#" class="footer__link">Судебный департамент при Верховном Суде Российской Федерации</a>
+								</li>
+							</ul>
+							<ul class="footer-menu__list">
+								<li>
+									<a href="#" class="footer__link">Государственная автоматизированная система Российской Федерации «Правосудие»	</a>
+								</li>
+								<li>
+									<a href="#" class="footer__link">Органы государственной власти Российской Федерации</a>
+								</li>
+								<li>
+									<a href="#" class="footer__link">Официальный сайт Единой информационной системы в сфере закупок</a>
+								</li>
+								<li>
+									<a href="#" class="footer__link">Официальный интернет-портал правовой информации</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-menu__col justify">
+						<div>
+							<h3 class="footer-menu__title">дополнительная информация</h3>
+							<ul class="footer-menu__list footer-menu__drop">
+								<li>
+									<a href="#" class="footer__link">Политика в отношении обработки и защиты персональных данных</a>
+								</li>
+							</ul>
+						</div>
+						<form action="#" class="search-box">
+							<div class="search-box__description">Поиск по сайту</div>
+							<div class="search-box__input">
+								<input type="text">
+								<button type="submit">
+									<svg>
+										<use xlink:href="#search-icon"></use>
+									</svg>
+								</button>
+							</div>
+						</form><!--/search-box-->
+					</div>
+				</div>
+				<div class="footer__foot">
+					<div class="footer__copyright">Федеральные арбитражные суды 2022г.</div>
+					<div class="social">
+						<a href="#" class="social__icon">
+							<img src="assets/images/yt-icon.svg" alt="">
+						</a>
+						<a href="#" class="social__icon">
+							<img src="assets/images/odno-icon.svg" alt="">
+						</a>
+						<a href="#" class="social__icon">
+							<img src="assets/images/vk-icon.svg" alt="">
+						</a>
+					</div><!--/social-->
+				</div>
+			</div>
+		</footer><!--/footer-->
+	</div>
+
+	<div class="popup popup-fas">
+		<div class="closex"></div>
+		<div class="popup__inner">
+			<div class="popup__box">
+				<span class="popup__close">
+					<svg>
+						<use xlink:href="#close-icon"></use>
+					</svg>
+				</span>
+				<div class="popup__content">
+					<div class="search-block">
+						<form action="#" class="search-box">
+							<div class="search-box__input">
+								<input type="text" placeholder="Поиск">
+								<button type="submit">
+									<svg>
+										<use xlink:href="#search-icon"></use>
+									</svg>
+								</button>
+							</div>
+						</form><!--/search-box-->
+						<div class="check-fas">
+							<div class="tabs-nav">
+								<a href="#" onclick="javascript:tabs(1);return false;" class="t1 active">Арбитражные суды округов </a>
+								<a href="#" onclick="javascript:tabs(2);return false;"  class="t2">Арбитражные апелляционные суды</a>
+								<a href="#" onclick="javascript:tabs(3);return false;"  class="t3">Арбитражные суды субъектов федерации</a>
+								<a href="#">Суд по интеллектуальным правам</a>
+							</div>
+						</div><!--/check-fas-->
+					</div>
+					<div class="search-result">
+						<div class="tabs-block tab_1">
+							<h2 class="search-result__title">Арбитражные суды округов </h2>
+							<div class="search-result__inner flex">
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Волго-Вятского округа (Ф01)</a>
+									<a href="#" class="search-result__link">АС Восточно-Сибирского округа (Ф02)</a>
+									<a href="#" class="search-result__link">АС Восточно-Сибирского округа (Ф02)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Дальневосточного округа (Ф03)</a>
+									<a href="#" class="search-result__link">АС Поволжского округа (Ф06)</a>
+									<a href="#" class="search-result__link">АС Поволжского округа (Ф06)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Северо-Западного округа (Ф07)</a>
+									<a href="#" class="search-result__link">АС Северо-Кавказского округа (Ф08)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Уральского округа (Ф09)</a>
+									<a href="#" class="search-result__link">АС Центрального округа (Ф10)</a>
+								</div>
+							</div>
+						</div>
+						<div class="tabs-block tab_2">
+							<h2 class="search-result__title">Арбитражные апелляционные суды </h2>
+							<div class="search-result__inner flex">
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">1-й ААС (01АП)</a>
+									<a href="#" class="search-result__link">2-й ААС (02АП)</a>
+									<a href="#" class="search-result__link">3-й ААС (03АП)</a>
+									<a href="#" class="search-result__link">4-й ААС (04АП)</a>
+									<a href="#" class="search-result__link">5-й ААС (04АП)</a>
+									<a href="#" class="search-result__link">6-й ААС (04АП)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">7-й ААС (01АП)</a>
+									<a href="#" class="search-result__link">8-й ААС (02АП)</a>
+									<a href="#" class="search-result__link">9-й ААС (03АП)</a>
+									<a href="#" class="search-result__link">10-й ААС (04АП)</a>
+									<a href="#" class="search-result__link">11-й ААС (04АП)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">12-й ААС (01АП)</a>
+									<a href="#" class="search-result__link">13-й ААС (02АП)</a>
+									<a href="#" class="search-result__link">14-й ААС (03АП)</a>
+									<a href="#" class="search-result__link">15-й ААС (04АП)</a>
+									<a href="#" class="search-result__link">16-й ААС (04АП)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">17-й ААС (01АП)</a>
+									<a href="#" class="search-result__link">18-й ААС (02АП)</a>
+									<a href="#" class="search-result__link">19-й ААС (03АП)</a>
+									<a href="#" class="search-result__link">20-й ААС (04АП)</a>
+									<a href="#" class="search-result__link">21-й ААС (04АП)</a>
+								</div>
+							</div>
+						</div>
+						<div class="tabs-block tab_3">
+							<h2 class="search-result__title">Арбитражные суды субъектов федерации </h2>
+							<div class="search-result__inner flex">
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Алтайского края (А03)</a>
+									<a href="#" class="search-result__link">АС Амурской области (А04)</a>
+									<a href="#" class="search-result__link">АС Архангельской области (А05)</a>
+									<a href="#" class="search-result__link">АС Астраханской области (А06)</a>
+									<a href="#" class="search-result__link">АС Белгородской области (А08)</a>
+									<a href="#" class="search-result__link">АС Брянской области (А09)</a>
+									<a href="#" class="search-result__link">АС Владимирской области (А11)</a>
+									<a href="#" class="search-result__link">АС Волгоградской области (А12)</a>
+									<a href="#" class="search-result__link">АС Вологодской области (А13)</a>
+									<a href="#" class="search-result__link">АС Воронежской области (А14)</a>
+									<a href="#" class="search-result__link">АС Владимирской области (А11)</a>
+									<a href="#" class="search-result__link">АС Волгоградской области (А12)</a>
+									<a href="#" class="search-result__link">АС Вологодской области (А13)</a>
+									<a href="#" class="search-result__link">АС Воронежской области (А14)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Кировской области (А28)</a>
+									<a href="#" class="search-result__link">АС Костромской области (А31)</a>
+									<a href="#" class="search-result__link">АС Краснодарского края (А32)</a>
+									<a href="#" class="search-result__link">АС Красноярского края (А33)</a>
+									<a href="#" class="search-result__link">АС Курганской области (А34)</a>
+									<a href="#" class="search-result__link">АС Курской области (А35)</a>
+									<a href="#" class="search-result__link">АС Липецкой области (А36)</a>
+									<a href="#" class="search-result__link">АС Магаданской области (А37)</a>
+									<a href="#" class="search-result__link">АС Московской области (А41)</a>
+									<a href="#" class="search-result__link">АС Мурманской области (А42)</a>
+									<a href="#" class="search-result__link">АС Липецкой области (А36)</a>
+									<a href="#" class="search-result__link">АС Магаданской области (А37)</a>
+									<a href="#" class="search-result__link">АС Московской области (А41)</a>
+									<a href="#" class="search-result__link">АС Мурманской области (А42)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Республики Адыгея (А01)</a>
+									<a href="#" class="search-result__link">АС Республики Алтай (А02)</a>
+									<a href="#" class="search-result__link">АС Республики Башкортостан (А07)</a>
+									<a href="#" class="search-result__link">АС Республики Бурятия (А10)</a>
+									<a href="#" class="search-result__link">АС Республики Дагестан (А15)</a>
+									<a href="#" class="search-result__link">АС Республики Ингушетия (А18)</a>
+									<a href="#" class="search-result__link">АС Республики Калмыкия (А22)</a>
+									<a href="#" class="search-result__link">АС Республики Карелия (А26)</a>
+									<a href="#" class="search-result__link">АС Республики Коми (А29)</a>
+									<a href="#" class="search-result__link">АС Республики Крым (А83)</a>
+									<a href="#" class="search-result__link">АС Республики Калмыкия (А22)</a>
+									<a href="#" class="search-result__link">АС Республики Карелия (А26)</a>
+									<a href="#" class="search-result__link">АС Республики Коми (А29)</a>
+									<a href="#" class="search-result__link">АС Республики Крым (А83)</a>
+								</div>
+								<div class="search-result__col">
+									<a href="#" class="search-result__link">АС Сахалинской области (А59)</a>
+									<a href="#" class="search-result__link">АС Свердловской области (А60)</a>
+									<a href="#" class="search-result__link">АС Смоленской области (А62)</a>
+									<a href="#" class="search-result__link">АС Ставропольского края (А63)</a>
+									<a href="#" class="search-result__link">АС Тамбовской области (А64)</a>
+									<a href="#" class="search-result__link">АС Тверской области (А66)</a>
+									<a href="#" class="search-result__link">АС Томской области (А67)</a>
+									<a href="#" class="search-result__link">АС Тульской области (А68)</a>
+									<a href="#" class="search-result__link">АС Тюменской области (А70)</a>
+									<a href="#" class="search-result__link">АС Удмуртской Республики (А71)</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+    	    </div>
+		</div>
+	</div><!--/popup-fas-->
+
+	<div class="popup popup-search">
+		<div class="closex"></div>
+		<div class="popup__inner">
+			<div class="popup__box">
+				<span class="popup__close">
+					<svg>
+						<use xlink:href="#close-icon"></use>
+					</svg>
+				</span>
+				<div class="popup__content">
+					<div class="search-block">
+						<form action="#" class="search-box">
+							<div class="search-box__input">
+								<input type="text" placeholder="Поиск">
+								<button type="submit">
+									<svg>
+										<use xlink:href="#search-icon"></use>
+									</svg>
+								</button>
+							</div>
+						</form><!--/search-box-->
+					</div>
+					<div class="search-result">
+						<h2 class="search-result__title">Популярные запросы</h2>
+						<div class="search-result__inner">
+							<div class="serch-result__col">
+								<div class="search-result__links">
+									<ul>
+										<li>
+											<a href="#">Картотека арбитражных дел</a>
+										</li>
+										<li>
+											<a href="#">Расписание судебных заседаний</a>
+										</li>
+										<li>
+											<a href="#">Кадровое обеспечение</a>
+										</li>
+										<li>
+											<a href="#">Правовые основы</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+    	    </div>
+		</div>
+	</div><!--/popup-search-->
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.vmap.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.vmap.map.js" charset="utf-8"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery('#vmap').vectorMap({
+          map: 'map',
+          backgroundColor: 'none',
+          color: '#E6EAEC',
+          //hoverOpacity: 0.7,
+          hoverColor: '#C8EEFF',
+          enableZoom: false,
+          showTooltip: true,
+          scaleColors: ['#C8EEFF', '#006491'],
+          normalizeFunction: 'polynomial',
+          selectedColor: '#051E87',
+          onRegionSelect: function (event, code, region) {
+    			$(".popup-fas").fadeIn(333);
+    			$(".popup-fas .popup__inner").fadeIn(333);
+    			$('body').addClass("hidden");
+          }
+        });
+      });
+    </script>
+</body>
+</html>
