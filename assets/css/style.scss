@@ -347,6 +347,13 @@ body.hidden {
 			font-size: 14px;
 			font-weight: 600;
 			color: $wh;
+			a {
+				color: $wh;
+				transition: all .2s linear;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 			span {
 				line-height: $lh;
 				&:nth-child(2) {
@@ -785,12 +792,12 @@ body.hidden {
 		font-family: $ff;
 		font-size: 20px;
 		font-weight: 600;
-		color: $blue;
+		color: $d-gray;
 		line-height: $lh;
 		margin-bottom: 5px;
 		transition: all .2s linear;
 		&:hover {
-			text-decoration: underline;
+			color: $blue;
 		}
 	}
 	&__description {
@@ -928,6 +935,18 @@ body.hidden {
 
 	.info-block {
 		margin-top: 40px;
+	}
+
+	.fas-nav {
+		&-geo {
+			width: 250px;
+			&__inner {
+				padding: 10px;
+			}
+			&__info {
+				font-size: 12px;
+			}
+		}
 	}
 }
 

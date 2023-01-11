@@ -102,7 +102,31 @@
 					</div>
 				</div>
 				<nav class="header__nav">
-					<a href="#" class="header__link">Общая информация</a>
+					<div class="header__link header__link_drop">
+						<span>Общая информация</span>
+						<div class="header__dropdown">
+							<ul>
+								<li>
+									<a href="#" class="header__link">Полномочия федеральных арбитражных судов</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Состав судов</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Требования, предъявляемые к форме и содержанию документов, используемых при обращении в суд</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Обжалование судебных актов</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Перечень информационных систем, находящихся в ведении федеральных арбитражных судов</a>
+								</li>
+								<li>
+									<a href="#" class="header__link">Государственная пошлина</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<a href="#" class="header__link">Правовые основы</a>
 					<a href="#" class="header__link">Противодействие коррупции</a>
 					<a href="#" class="header__link">Кадровое обеспечение</a>
@@ -572,9 +596,7 @@
           normalizeFunction: 'polynomial',
           selectedColor: '#051E87',
           onRegionSelect: function (event, code, region) {
-    			$(".popup-fas").fadeIn(333);
-    			$(".popup-fas .popup__inner").fadeIn(333);
-    			$('body').addClass("hidden");
+    			$(".fas-nav-geo").fadeIn(333);
           }
         });
       });

@@ -21,6 +21,25 @@ $(document).ready(function() {
   });
   /*==========/header__nav (dropdown)=========*/
 
+  /*======Header__dropdown=============*/
+  $(".header__link_drop").hover( function(event) {
+    event.preventDefault();
+    if ($(window).width() > 992){
+      $(this).toggleClass("dropdown");
+      $(this).find(".header__dropdown").fadeToggle(222);   
+    }
+  });
+  $(".header__link_drop span").on("click", function(event) {
+    event.preventDefault();
+    if ($(window).width() <= 992){
+      $(this).parent().toggleClass("dropdown");
+      $(this).parent().find(".header__dropdown").slideToggle();   
+      $(".header__link_drop span").not(this).parent().find(".header__dropdown").slideUp();   
+      $(".header__link_drop span").not(this).parent().removeClass('dropdown');   
+    }
+  });
+  /*==========/header__dropdown=========*/
+
   /*======Footer-menu (dropdown)=============*/
   		$(".footer-menu__title").on("click", function() {
   		  $(this).toggleClass('active');
